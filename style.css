@@ -1,0 +1,140 @@
+/* FLEXBOX 
+
+    justify-content:
+    Define o alinhamento dos itens ao longo do eixo principal do container flexível.
+
+    Flex-start: 
+    Alinha os itens no início do container flexível. A ESQUERDA
+
+    Flex-end: 
+    Alinha os itens no final do container flexível. Á DIREITA
+
+    Center: 
+    Alinha os itens no centro do container flexível. AO CENTRO
+
+    Space-between: Distribui os itens igualmente, com o primeiro item no início e o último item no final do container flexível. ESPAÇO ENTRE OS ITENS
+
+    Space-around: 
+    Distribui os itens igualmente, com espaço ao redor de cada item. ESPAÇO AO REDOR
+
+    align-items:
+    Define o alinhamento dos itens ao longo do eixo transversal do container flexível.
+    align-items: flex-start; Alinha os itens no início do eixo transversal. (Topo)
+    align-items: flex-end; Alinha os itens no final do eixo transversal. (Base  
+*/
+
+/* FLEX DIRECTION
+    ROW: Alinha os itens em uma linha horizontal. (Padrão)
+    ROW-REVERSE: Alinha os itens em uma linha horizontal, mas na ordem inversa.
+    column: Alinha os itens em uma coluna vertical.
+    column-reverse: Alinha os itens em uma coluna vertical, mas na ordem inversa.
+
+*/
+
+
+
+body {
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+    margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+background: linear-gradient(to right, #161d5f, #161d5f, #161d5f);
+color: #fff;
+min-height: 100vh;
+
+H2 {
+    justify-content: flex-start;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* align-items: center; */
+
+
+/* 
+header {
+    text-align: center;
+    padding: 30px;
+
+}
+header img {
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    }
+header h1 {
+    margin: 15px 0 5px;
+    font-size: 24px;
+}
+
+header p {
+    margin: 2;
+    font-size: 16px;
+    }
+    
+main {
+ justify-content: space-evenly;
+ display: flex;
+ flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+    } */
+    .card{
+    width: 500px;
+    height: 190px;
+    background: #d12798;
+    border: 2px solid #c09f31;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+    background-color: rgba(153, 52, 52, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    
+    img{
+        justify-content: flex-start;
+       display: flexbox;
+       margin: 0 auto;
+       width: 150px;
+       height: 150px;
+       border-radius: 50%;
+       border: 5px solid #fff;
+    
+    }
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    margin bottom: 10px;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #d12798;
+    text-decoration: none;
+border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-top: 1px solid #fff;
+    margin-top: 20px;
+}
